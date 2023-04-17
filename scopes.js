@@ -8,3 +8,14 @@ function add(b){
 
 }
 add(50);
+
+function greet(){
+    let hello = "hi";
+    function talk(){
+        let c = "hello there";
+        console.log(`${hello} ${c}`); //variable hello can be accessed because it is a global vriable to functions within greet only.
+    }
+    talk();
+    // console.log({c}); can't be acessed because its a local variable in function talk
+}
+greet();
